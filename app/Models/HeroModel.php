@@ -27,7 +27,7 @@ class HeroModel extends Model
     protected $useSoftDeletes = true;
 
     /**
-     * @var string[]
+     * @var list<string>
      */
     protected $allowedFields = ['name', 'class', 'level', 'pronoun', 'image'];
 
@@ -45,7 +45,7 @@ class HeroModel extends Model
     ];
 
     /**
-     * @var mixed[]
+     * @var array<string, array<string, string>>
      */
     protected $validationMessages = [];
 

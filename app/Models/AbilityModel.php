@@ -37,7 +37,7 @@ class AbilityModel extends Model
     protected $skipValidation = false;
 
     /**
-     * @var string[]
+     * @var list<string>
      */
     protected $allowedFields = ['name', 'damage', 'cooldown'];
 
