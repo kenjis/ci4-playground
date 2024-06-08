@@ -38,7 +38,7 @@ class MonsterModel extends Model
     protected $skipValidation = false;
 
     /**
-     * @var string[]
+     * @var list<string>
      */
     protected $allowedFields = ['name', 'health', 'dungeon_id'];
 
@@ -52,7 +52,7 @@ class MonsterModel extends Model
     ];
 
     /**
-     * @var mixed[]
+     * @var array<string, array<string, string>>
      */
     protected $validationMessages = [];
 }

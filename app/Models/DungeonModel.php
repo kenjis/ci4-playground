@@ -32,7 +32,7 @@ class DungeonModel extends Model
     protected $useSoftDeletes = false;
 
     /**
-     * @var string[]
+     * @var list<string>
      */
     protected $allowedFields = ['name', 'difficulty', 'capacity'];
 
@@ -51,7 +51,7 @@ class DungeonModel extends Model
     ];
 
     /**
-     * @var mixed[]
+     * @var array<string, array<string, string>>
      */
     protected $validationMessages = [];
 

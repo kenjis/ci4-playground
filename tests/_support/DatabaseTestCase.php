@@ -2,6 +2,7 @@
 
 namespace Tests\Support;
 
+use CodeIgniter\Database\Seeder;
 use CodeIgniter\Test\CIUnitTestCase;
 use CodeIgniter\Test\DatabaseTestTrait;
 
@@ -23,7 +24,7 @@ abstract class DatabaseTestCase extends CIUnitTestCase
      * The seed file(s) used for all tests within this test case.
      * Should be fully-namespaced or relative to $basePath
      *
-     * @var array|string
+     * @var class-string<Seeder>|list<class-string<Seeder>>
      */
     protected $seed = 'App\Database\Seeds\PlaygroundSeeder';
 
